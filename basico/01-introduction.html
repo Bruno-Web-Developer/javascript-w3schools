@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>JavaScript Introduction</h1>
+    <h2>JavaScript Can Change HTML Content</h2>
+    <p>
+        One of many JavaScript HTML methodsis <b class="red">getEementById()</b>. <br><br>
+        The example below 'finds' an HTML element (with id='demo'), and change the element content (innerHTML) to 'Hello
+        JavaScript'.
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                document.getElementById('demo').innerHTML = 'Hello JavaScript';
+                </p>
+        </fieldset>
+    </div>
+
+    <div class="nota">
+        <p>
+            JavaScript accepts both double and single quotes.
+        </p>
+    </div>
+
+    <hr>
+
+    <h2>JavaScript Can Change HTML Attribute Values</h2>
+
+    <p>
+        In this example JavaScript changes the value of the <b class="red">src</b> attribute of an <b
+            class="red">image</b> tag:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <img id="lampada" src="images/apagada.jpeg" alt="" style="display: block;margin: 
+            0 auto;">
+            <button onclick="document.getElementById('lampada').src = 'images/acesa.jpeg'"
+                style="width: 48%;margin-top: 10px;margin-right: 2%;">Ligar</button>
+            <button onclick="document.getElementById('lampada').src = 'images/apagada.jpeg'"
+                style="width: 48%;margin-top: 10px;">Apagar</button>
+        </fieldset>
+    </div>
+
+    <hr style="clear: both;">
+
+    <h2>JavaScript Can Cjange HTMl Styles (CSS)</h2>
+
+    <p>
+        Changing the style of an HTML element, is a variant of changing an HTML attribute:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                document.getElementById('demo').style.backgroundColor = 'color-name'
+            </h4>
+        </fieldset>
+    </div>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Practical Example</legend>
+            <div class="circulo" id="circulo"></div>
+            <button class="btn4" onclick="mudarCor('red')">Vermelho</button>
+            <button class="btn4" onclick="mudarCor('green')">Verde</button>
+            <button class="btn4" onclick="mudarCor('blue')">Azul</button>
+            <button class="btn4" onclick="mudarCor('white')">Padrão</button>
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <h2>JavaScript Can Hide and Show HTML Elements</h2>
+
+    <p>
+        Hiding HTML Elements can be done by changing the <b class="red">display</b> style:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <p style="text-align: center;">Hide</p>
+            <h4>
+                document.getElementById('demo').style.display = 'none'
+            </h4>
+            <p style="text-align: center;">Show</p>
+            <h4>
+                document.getElementById('demo').style.display = 'block'
+            </h4>
+        </fieldset>
+    </div>
+
+    <div class="exemplo">
+        <fieldset>
+            <legednd>Practical Example</legednd>
+            <div id="teste1">
+                <h3 style="color: blueviolet;">JavaScript can hide and show HTML elements</h3>
+            </div>
+            <div style="text-align: center;">
+                <button onclick="document.getElementById('teste1').style.display = 'none'"
+                    style="width: 100px;background-color: red;color: white;">Hide</button>
+                <button onclick="document.getElementById('teste1').style.display = 'block'"
+                    style="width: 100px;background-color: green;color: white;">Show</button>
+            </div>
+        </fieldset>
+    </div>
+
+    <button onclick="window.location = '02-where-to.html'"
+        style="width: 150px;height: 50px;background-color: blue;display: block;margin: 10px auto;border-radius: 10px;font-size: 20px;color: white;">Next
+        =></button>
+    <script src="js/01.js"></script>
+
+</body>
+
+</html>

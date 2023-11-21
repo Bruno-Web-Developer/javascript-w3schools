@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Output</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>JavaScript Output</h1>
+    <hr>
+    <h2>JavaScript Display Possibilities</h2>
+    <p>
+        JavaScript can 'display' data in differents ways:
+    </p>
+    <ul>
+        <li>Writing into an HTML element, using <b class="red">innerHTML</b></li>.
+        <li>Writing into the HTML output using <b class="red">document.write()</b></li>.
+        <li>Writing into an alert box, using <b class="red">window.alert()</b></li>.
+        <li>Writing into the browser console, using <b class="red">console.log()</b></li>.
+    </ul>
+    <hr>
+    <h2>Using innerHTML</h2>
+
+    <p>
+        To access an HTML element, JavaScript can use the <b class="red">document.getElementById(id)</b> method.
+        <br><br>
+        The <b class="red">id</b> attribute defines the HTML element. The <b class="red">innerHTML</b> property defines
+        the HTML content:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legdn>Example</legdn>
+            <h4>
+                &lt;p&gt;Sum => 5 + 7 = &lt;span id="demo"&gt;?&lt;/span&gt;?&lt;/p&gt; <br>
+                &lt;script&gt; <br>
+                &emsp;document.getElementById("demo").innerHTML = 5 + 6; <br>
+                &lt;/script&gt;
+            </h4>
+        </fieldset>
+    </div>
+    <br>
+    <div class="exemplo">
+        <fieldset>
+            <legdn>Practical</legdn>
+            <p style="text-align: center;">
+                Sum => 5 + 7 = <span id="teste2">?</span>
+            </p>
+            <button onclick="document.getElementById('teste2').innerHTML = 5 + 7;" class="botoes">Sum</button>
+        </fieldset>
+    </div>
+
+    <div class="nota">
+        Changing
+    </div>
+
+    <hr>
+    <h2>Using document.write()</h2>
+    <p>For testing, it is convenient to use <b class="red">document.write()</b>.</p>
+
+    <div class="nota">
+        <p>
+            Using document.write() after an HTML document is loaded, will <b>delete all existing HTML.</b>
+        </p>
+    </div>
+    <br>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Practical</legend>
+            <h3>My firts Web Page</h3>
+            <p>My first paragraph.</p>
+            <button class="botoes" onclick="document.write(24)">Try it</button>
+        </fieldset>
+    </div>
+
+    <div class="nota">
+        <p>
+            The document.write() method should only be used for testing.
+        </p>
+    </div>
+
+    <hr>
+    <h2>
+        Using window.alert()
+    </h2>
+
+    <p>
+        You can use an alert box to display data:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                &lt;h1>My First Web Page&lt;/h1> <BR></BR>
+                &lt;p>My first paragraph.&lt;/p>
+                <BR></BR>
+                &lt;script> <br>
+                &emsp;window.alert(5 + 6); <br>
+                &lt;/script>
+            </h4>
+        </fieldset>
+    </div>
+    <br>
+    <div class="exemplo">
+        <fieldset>
+            <legdn>Practical</legdn>
+            <p style="text-align: center;">
+                Sum => 5 + 7
+            </p>
+            <button onclick="alert(5+7)" class="botoes">Click</button>
+        </fieldset>
+    </div>
+    <p>
+        You can skip the <b class="red">window</b> keyword. <BR></BR>
+        In JavaScript, the window object is the global scope object. This means that variables, properties, and methods
+        by default belong to the window object. This also means that specifying the <b class="red">window</b> keyword is
+        optional.
+    </p>
+
+    <hr>
+    <h2>Using console.log()</h2>
+
+    <p>
+        For debugging purposes, you can call the <b class="red">concole.log()</b> method in the browser to display data.
+    </p>
+    <hr>
+    <p>
+        JavaScript does not have any print object or print methods.<BR></BR>
+        You cannot access output devices from JavaScript. <BR></BR>
+        The only exception is that you can call the <b class="red">window.print()</b> method in the browser to print the content of the current window.
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                &lt;button onclick="window.print()">Print this page&lt;/button>
+            </h4>
+        </fieldset>
+    </div>
+    <br>
+    <div class="exemplo">
+        <fieldset>
+            <legdn>Practical</legdn>
+            <h3>Print the page</h3>
+            <button class="botoes" onclick="print()">Print</button>
+        </fieldset>
+    </div>
+    <button onclick="window.location = '04-statements.html'"
+        style="width: 150px;height: 50px;background-color: blue;display: block;margin: 10px auto;border-radius: 10px;font-size: 20px;color: white;">Next
+        =></button>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS FUNCTIONS</title>
+    <link rel="stylesheet" href="css/new-style.css">
+</head>
+<body>
+
+    <h1>JavaScript Functions</h1>
+    
+    <div class="botoes">
+        <button class="btn-md">&lt; Previous</button>
+        <button class="btn-md">Next &gt;</button>
+    </div>
+
+    <hr>
+
+    <p>
+        A JavaScript function is a block of code designed to perform a particular task. <br><br>
+        A JavaScriptfunction is executed when 'something' invokes it (calls it).
+    </p>
+
+    <div class="exemplo">
+        <h3>Example</h3>
+        <fieldset>
+            <code>
+                // Function to compute the product of p1 and p2  <br><br>
+                function myFunction(p1, p2) { <br>
+                    &emsp;return p1 * p2; <br>
+                }
+            </code>
+        </fieldset>
+    </div>
+
+    <div class="exemplo">
+        <h3>Exemplo Prático - myFunction(p1, p2)</h3>
+        <fieldset class="pratico">
+            <div class="valores">
+                <label for="">p1 ><input type="text" class="variaveis" id="var1"></label>
+                <label for="">p2 > <input type="text" class="variaveis" id="var2"></label>
+                <label for="">res ><input id="res1" type="text" class="variaveis" disabled></label>
+                <button onclick="myExample1()" class="executar">Executar</button>
+            </div>
+        </fieldset>
+    </div>
+    <hr>
+
+    <h2>JavaScript Function Syntax</h2>
+    <p>
+        A JavaScript function is defined with the <b class="red">function</b> keyword, followed by <b>name</b>, followed by parentheses <b>()</b>. <br><br>
+        Function names can contain letters, digits, underscores, and dollar signs. <br><br>
+        the parentheses may include parameter names separeted by commas: <b>(parameter1, parameter2,...)</b> <br><br>
+        The code to be executed, by the function, is placed inside curly brackets: <b>{}</b>
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            function name(parameter1, parameter2, parameter3) { <br>
+            &emsp;// code to be executed <br>
+            }
+        </fieldset>
+    </div>
+    <p>
+        Function <b>parameters</b> are listed inside the parentheses () in the function definition. <br><br>
+        Function <b>arguments</b> are the <b>values</b> received by the function when it is invoked. <br><br>
+        Inside the function, the arguments (the parameters) behave as local variables.
+    </p>
+    <hr>
+    <h2>Function Invocation</h2>
+    <p>
+        The code inside the function will execute when 'something' <b>invokes</b> (calls) the function:
+        <ul>
+            <li>When an event occurs (when a user clicks a button)</li>
+            <li>When it is invoked (called) from JavaScript code</li>
+            <li>Automatically (self invoked)</li>
+        </ul>
+    </p>
+    <hr>
+    <h2>Function Return</h2>
+    <p>
+        When JavaScript reaches a <b class="red">return</b> statement, the function will stop executing. <br><br>
+        If the function was invoked from a statement, JavaScript will 'return' to execute the code after the invoking statement. <br><br>
+        Functions often compute a <b>return value</b>. The return value is 'returned' back to the 'caller'.
+    </p>
+    <div class="pergunta">
+        <h3>Why Functions?</h3>
+        <ul>
+            <li>With functions you can reuse code</li>
+            <li>You can write code that can be used many times</li>
+            <li>You can usethe same code with different arguments, to produce different results</li>
+        </ul>
+    </div>
+    <hr>
+    <h2>The () Operator</h2>
+    <p>
+        The () operator invokes the function:
+    </p>
+    <div class="exemplo">
+        <h3>Example</h3>
+        <p>Convert Fahrenheit to Celsius:</p>
+        <fieldset>
+            function toCelsius(fahrenheit) { <br>
+                &emsp;return (5/9) * (fahrenheit-32); <br>
+            } <br><br>
+            let value = toCelsius(77);
+        </fieldset>
+    </div>
+    <div class="exemplo">
+        <h3>Exemplo Prático - Conversor Celsiu - Fahrenheit</h3>
+        <fieldset class="pratico">
+            <input type="radio" name="celsius-fahrenheit" id="celsius"><label for="celsius">To Celsius</label>
+            <input type="radio" name="celsius-fahrenheit" id="fahrenheit"><label for="fahrenheit">To Fahrenheit</label>
+        </fieldset>
+    </div>
+    <script src="js/09.js"></script>
+</body>
+</html>

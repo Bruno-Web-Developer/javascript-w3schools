@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Syntax</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>JavaScript Syntax</h1>
+    <div class="exemplo">
+        <p>
+            JavaScript syntax is the set f rules, how JavaScript programs are constructed:
+        </p>
+        <fieldset>
+            <pre>
+// How to create variable:
+var x;
+var y;
+
+// How to use variables:
+x = 5;
+y = 6;
+let z = x + y;
+            </pre>
+        </fieldset>
+    </div>
+    <p>
+        The JavaScript syntax defines two types of values:
+    </p>
+    <ul>
+        <li>Fixed values - called <b>Literals</b></li>
+        <li>Variable values - called <b>Variables</b></li>
+    </ul>
+    <hr>
+    <h2>JavaScript Literals</h2>
+    <p>
+        The two most important syntax rules for fixed values are:
+    </p>
+    <ol>
+        <li><b>Numbers - are writen with or without decimals</b></li><br>
+        <div class="exemplo">
+            <fieldset>
+                <h4>10.50 <BR></BR> 1001</h4>
+            </fieldset>
+        </div>
+        <br>
+        <li><b>Strings</b> are text, writen within double or single quotes</li> <br>
+        <div class="exemplo">
+            <fieldset>
+                <h4>'Bruno Corrêa' <BR></BR> "Bruno Corrêa"</h4>
+            </fieldset>
+        </div>
+    </ol>
+    <hr>
+    <h2>JavaScript Variables</h2>
+    <p>
+        In a programming language, <b>variable</b> are used to store data values. <BR></BR>
+        JavaScript use the keywords <b class="red">var, let, const</b> to <b>declare</b> variables <BR></BR>
+        An <b>equal sign</b> is used to <b>assign values</b> to variables. <BR></BR>
+        In this, x is defined as variable. Then, x is assigned the value 6:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <pre>
+let x;
+x = 6
+            </pre>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>JavaScript Operators</h2>
+    <p>
+        JavaScript uses <b>arithmetic operators</b> (<b class="red">+ - * /</b>) to <b>compute</b> values:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <pre>
+(5 + 6) * 10 = <span id="resultado"></span>
+            </pre>
+        </fieldset>
+        <button onclick="document.getElementById('resultado').innerHTML = (5 + 6) * 10" class="botoes">Calcular</button>
+    </div>
+    
+    <button onclick="window.location = '06-variables.html'"
+        style="width: 150px;height: 50px;background-color: blue;display: block;margin: 10px auto;border-radius: 10px;font-size: 20px;color: white;">Next
+        =></button>
+</body>
+</html>

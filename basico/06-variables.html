@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>JavaScript Variables</h1>
+    <div class="bloco">
+        <h3>Variables are Containers for Storing Data</h3>
+        <p>
+            JavaScript Variables can be declared in 4 ways:
+            <ul>
+                <li>Automatically</li>
+                <li>Using <b class="red">var</b></li>
+                <li>Using <b class="red">let</b></li>
+                <li>using <b class="red">const</b></li>
+            </ul>
+        </p>
+    </div>
+    <p>
+        In this first example, <b class="red">x, y , z</b> are declared variables. <BR></BR>
+        They are automatically declared when first used:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <pre>
+var x = 5;
+const y = 6;
+let z = x + y;
+            </pre>
+        </fieldset>
+    </div>
+    <div class="nota">
+        <h2>Note</h2>
+        <p>
+            It is considered good programming practice to always declare variables before use.
+        </p>
+    </div>
+    <div class="nota">
+        <h2>Note</h2>
+        <p>
+            The <b class="red">var</b> keyword was used in all JavaScript code from 1995 to 2015. <BR></BR>
+            The <b class="red">let</b> and <b class="red">const</b> keywords were added to JavaScript in 2015. <BR></BR>
+            The <b class="red">var</b> keyword should only be used in code written for older browsers.
+        </p>
+    </div>
+    <div class="nota">
+        <h2>When to Use var, let or const?</h2>
+        <ol>
+            <li>Always declare variables</li>
+            <li>Always use <b class="red">const</b> if the value should not be changed</li> 
+            <li>Always use <b class="red">const</b> if the type should not be changed</li>
+            <li>Only use <b class="red">let</b> if yoou can't use <b class="red">const</b></li>
+            <li>Only use <b class="red">var</b> if you MUST support old browsers</li>
+        </ol>
+    </div>
+    <hr>
+    <h2>JavaScript Identifiers</h2>
+    <p>
+        All JavaScript <b>variables</b> must be <b>identified</b> with <b>unique names.</b> <br><br>
+        These  unique names are called <b>identifiers</b> <br><br>
+        Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalValue). <br><br>
+        The general rules for constructing names for variables are:
+        <ul>
+            <li>Names can contain letters, digits, underscore, and dollar signs.</li>
+            <li>Names must begin with a letter</li>
+            <li>Names can also begin with $ an _</li>
+            <li>Names are case sensitive (y and Y are different variables)</li>
+            <li>Reserved words (like JavaScript keywords) cannot be used as names.</li>
+        </ul>
+    </p>
+    <div class="nota">
+        <h2>Note</h2>
+        <p>
+            JavaScript identifiers are case-sensitive.
+        </p>
+    </div>
+    <hr>
+    <h2>The Assignment Operator</h2>
+    <p>
+        In JavaScript, the equal sign <b class="red">=</b> is an 'assignment' operator, not an 'equal to' operator. <BR></BR>
+        This is different from algebra. The following does not makes sense in algebra:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <pre>
+x = x + 5;
+            </pre>
+        </fieldset>
+    </div>
+    <p>
+        In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x. <BR></BR>
+        (It calculates the value of x + 5 and puts the result into x. the value of x is incremented by 5)
+    </p>
+    <div class="nota">
+        <h2>Note</h2>
+        <p>
+            The 'equal to' operatir is written like <b class="red">==</b> in JavaScript.
+        </p>
+    </div>
+    <hr>
+    <h2>JavaScript Data Types</h2>
+    <p>
+        JavaScript variables can hold numbers like 1000 and text values like 'Bruno Miguel Corrêa'. <BR></BR>
+        In programming, text values are called strings. Strings are written inside double or single quotes. Numbers are written without quotes. Numbers in quotes, it will be treated as text string.
+    </p>
+    <hr>
+    <h2>Declaring a JavaScript Variable</h2>
+    <p>
+        Creating a variable in JavaScript is called 'declaring' a variable.
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <h4>var varName;</h4>
+        </fieldset>
+        <p>or:</p>
+        <fieldset>
+            <h4>let carName;</h4>
+        </fieldset>
+    </div>
+    <p>
+        After the declaration, the variable has no value (technically it is <b class="red">undefined</b>). <BR></BR>
+        To <b>assign</b> a value to the variable, use the eqaul sign:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <h4>carName = 'Volvo</h4>
+        </fieldset>
+        <p>You can also assign a value to the variable when you declare it:</p>
+        <fieldset>
+            <h4>let carName = 'Volvo</h4>
+        </fieldset>
+    </div>
+    <div class="nota">
+        <h2>Note</h2>
+        <p>
+            It's good programming practice to declare all variables at the beginning of a script.
+        </p>
+    </div>
+    <hr>
+    <h2>One Statement, Many Variables</h2>
+    <p>
+        You can declare many variables in one statement.    <br><br>
+        Start the statement with <b class="red">let</b> and separate the variables by comma:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>let person = 'Bruno Miguel', carName = 'Volvo, price = 200;</h4>
+        </fieldset>
+    </div>
+</body>
+</html>
