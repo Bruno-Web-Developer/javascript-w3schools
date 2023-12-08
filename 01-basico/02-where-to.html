@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Where To</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>JavaScript Where To</h1>
+    <hr>
+    <h2>The &lt;Script&gt; Tag</h2>
+    <p>
+        In HTML, JavaScript code is inserted betweem <b class="red">script</b> tags.
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                &lt;script> <br>
+                    &emsp;document.getElementById("demo").innerHTML = "My First JavaScript"; <br>
+                &lt;/script> 
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+
+    <h2>JavaScript Functions and Events</h2>
+    <p>
+        A JavaScript <b class="red">function</b> is a block od JavaScript code, that can be executed when 'called' for. <br><br>
+        For example, a function can be called when an <b>event</b> occurs, like when the user clicks a button.
+    </p>
+    <div class="nota">
+        <p>
+            You will learn much more about functions and events in later chapters.
+        </p>
+    </div>
+    <hr>
+
+    <h2>
+        JavaScript in &lt;head&gt; or &lt;body&gt;
+    </h2>
+    <p>
+        You can place any number of scripts in a HTML document. <br><br>
+        Scripts can be placed in the <b class="red">body</b>, or in the <b class="red">head</b> section of an HTML page, or in both.
+    </p>
+    <p>
+        In this example, a JavaScript <b class="red">function</b> is placed in the <b class="red">head</b> section of an HTML page. <br><br>
+        The function is invoked (called) when a button is clicked:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <p id="teste1" style="text-align: center;">This paragraph will change.</p>
+            <button class="botoes" onclick="paragraphChange()">Try it</button>
+        </fieldset>
+    </div>
+
+    <hr>
+    <h2>External JavaScript</h2>
+    <p>
+        Scripts can also be placed in external files:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>External file: myScript.js</legend>
+            <h4>function myFunction(){<br>
+                &emsp;document.getElementById('demo').innerHTML = 'Paragraph Changed!'; <br>
+                }
+            </h4>
+        </fieldset>
+    </div>
+
+    <p>
+        External scripts are practical when the same code is used in many different web pages. <br><br>
+        JavaScript files have the file extension <b>.js</b>. <br><br>
+        To use an external script, put the name of the script file in the <b class="red">src</b> (source) attribute of a <b class="red">script</b> tag:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                &lt;script src="myScript.js"&gt;&lt;/script&gt;
+            </h4>
+        </fieldset>
+    </div>
+
+    <p>
+        You can place an external script reference in <b class="red">head</b> or <b class="red">body</b> as you like. <br><br>
+        The script will behave as if it was located exactly where the <b class="red">script</b> tag is oacted.
+    </p>
+
+    <div class="nota">
+        <p>
+            External scripts cannot contain <b class="red">script</b> tags.
+        </p>
+    </div>
+
+    <hr>
+
+    <h2>External JavaScript Advantages</h2>
+
+    <p>
+        Placing scripts in external files has some advantages:
+    </p>
+    <ul>
+        <li>It separates HTML and code</li>
+        <li>It makes HTML and JavaScript easier to read and mantain</li>
+        <li>Catches JavaScript files can speed up page loads</li>
+    </ul>
+
+    <p>
+        To  add several script files to one page - use several scripts tags:
+    </p>
+
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                &lt;script src="myScript1.js"&gt;&lt;/script&gt;
+            </h4>
+            <h4>
+                &lt;script src="myScript2.js"&gt;&lt;/script&gt;
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>External Refrences</h2>
+    <p>
+        An external script can be referenced in 3 different ways:
+    </p>
+    <ul>
+        <li>With a full URL</li>
+        <li>With a file path</li>
+        <li>Without any path</li>
+    </ul>
+
+    <button onclick="window.location = '03-output.html'"
+        style="width: 150px;height: 50px;background-color: blue;display: block;margin: 10px auto;border-radius: 10px;font-size: 20px;color: white;">Next
+        =></button>
+
+    <script src="js/02.js"></script>
+
+</body>
+</html>

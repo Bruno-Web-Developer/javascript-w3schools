@@ -1,0 +1,105 @@
+body {
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+hr {
+    border: 2px solid green;
+    margin: 10px auto;
+}
+
+p {
+    text-align: justify;
+    padding: 0 10px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+table {
+    border: 2px solid black;
+    margin: 15px auto;
+    border-radius: 9px;background-color: white;
+}
+
+th, td {
+    border-radius: 5px;
+    padding: 3px 9px;
+}
+
+th {
+    background-color: beige;
+}
+
+
+tr:nth-child(even) {
+    background-color:thistle;
+}
+
+
+
+/* classes pessoais */
+
+.red {
+    color: red;
+    background-color: white;
+    border-radius: 4px;
+    padding: 1px 1.5px;
+}
+
+.nota {
+    margin: 10px auto;
+    background-color: tomato;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 2px 4px 1px black;
+}
+
+.l-simples li {
+    margin: 5px 2px;
+    padding: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.l-simples li:nth-child(even) {
+    background-color: azure;
+}
+.l-simples li:nth-child(odd) {
+    background-color: aquamarine;
+}
+
+.exemplo fieldset {
+    background-color: lightcyan;
+    border-radius: 10px;
+}
+
+.exemplo fieldset legend {
+    letter-spacing: 3px;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.exemplo > fieldset > h4 {
+    padding: 10px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+.botoes {
+    font-size: 18px;
+    display: block;
+    margin: 10px auto;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: chocolate;
+}

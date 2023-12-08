@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Obects</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>JavaScript Objects</h1>
+    <hr>
+    <div class="nota">
+        In JavaScript, objects are king. If you understand objects, you understand JavaScript.
+    </div>
+    <hr>
+    <p>
+        In JavaScript, almost 'everything' is an object.
+    <ul class="l-simples">
+        <li>Booleans, Numbers and Strings can be objects (if defined with the <b class="red">new</b> keyword)</li>
+        <li>Dates are always objects.</li>
+        <li>Maths are always objects.</li>
+        <li>Regular expressions are always objects.</li>
+        <li>Arrays are always objects.</li>
+        <li>Functions are always objects.</li>
+        <li>Objects are always objects.</li>
+    </ul>
+    </p>
+    <p>
+        All JavaScript values, except primitives, are objects.
+    </p>
+    <hr>
+    <h2>JavaScript Primitives</h2>
+    <p>
+        A <b>primitive value</b> is a value that has no properties or methods. <BR></BR>
+        <b>3.14</b> is a primitive value <BR></BR>
+        A <b>primitive data type</b> is a data that has a primitive value. <BR></BR>
+        JavaScript defines 7 types of primitive data type:
+    <ul>
+        <li><b class="red">string</b></li>
+        <li><b class="red">number</b></li>
+        <li><b class="red">boolean</b></li>
+        <li><b class="red">null</b></li>
+        <li><b class="red">undefined</b></li>
+        <li><b class="red">symbol</b></li>
+        <li><b class="red">bigint</b></li>
+    </ul>
+    </p>
+
+    <div class="nota">
+        <h3>Immutable</h3>
+        <p>
+            Primitive values are immutable (they are hardcoded and cannot be changed). <BR></BR>
+            If x = 3.14, you can change the value of x, but you cannot change the value of 3.14.
+        </p>
+    </div>
+
+    <table>
+        <tr>
+            <th>Value</th>
+            <th>Type</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+            <td>'Hello</td>
+            <td>string</td>
+            <td>'Hello is always 'Hello</td>
+        </tr>
+        <tr>
+            <td>3.14</td>
+            <td>number</td>
+            <td>3.14 is always 3.14</td>
+        </tr>
+        <tr>
+            <td>true</td>
+            <td>boolean</td>
+            <td>boolean is always boolean</td>
+        </tr>
+        <tr>
+            <td>false</td>
+            <td>boolean</td>
+            <td>boolean is always boolean</td>
+        </tr>
+        <tr>
+            <td>null</td>
+            <td>null (object)</td>
+            <td>null is always null</td>
+        </tr>
+        <tr>
+            <td>undefined</td>
+            <td>undefined</td>
+            <td>undefined is always undefined</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Objects are Variables</h2>
+    <p>
+        JavaScript variables can contain single values:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                let person = 'Bruno Miguel'
+            </h4>
+        </fieldset>
+    </div>
+    <p>
+        JavaScript variables can also conatin many values. <BR></BR>
+        Objects are variables too. But objects can contain many values. <BR></BR>
+        Object values are written as <b>name : value</b> pairs.
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                let person = {firstName:'Bruno', lastName:'Miguel', age:37, eyeColor:'Brown'}
+            </h4>
+        </fieldset>
+    </div>
+    <div class="nota">
+        <p>
+            A JavaScript object is a collection of <b>name values</b>
+        </p>
+    </div>
+    <p>
+        It is a common practice to declare objects with the <b class="red">const</b> keyword.
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                const person = {firstName:'Bruno', lastName:'Miguel', age:37, eyeColor:'Brown'}
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Object Properties</h2>
+    <p>
+        The named values, in JavaScript objects, are called <b>properties</b>.
+    </p>
+    <table>
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>firstName</td>
+            <td>Bruno</td>
+        </tr>
+        <tr>
+            <td>lastName</td>
+            <td>Miguel</td>
+        </tr>
+        <tr>
+            <td>age</td>
+            <td>37</td>
+        </tr>
+        <tr>
+            <td>eyeColor</td>
+            <td>Brown</td>
+        </tr>
+    </table>
+    <p>
+        Objects written as name value pairs are similar to:
+        <ul class="l-simples">
+            <li>Associate arrays in PHP</li>
+            <li>Dictionaries in Python</li>
+            <li>Hash tables in C</li>
+            <li>Hash maps in Java</li>
+            <li>Hashes in Ruby and Perl</li>
+        </ul>
+    </p>
+    <hr>
+    <h2>Object Methods</h2>
+    <p>
+        Methods are <b>actions</b> that can be performed on objects. <BR></BR>
+        Object properties can be both primitive values, other objects, and functions. <BR></BR>
+        An <b>object method</b> is an object property conatining a <b>function definition.</b>
+    </p>
+    <hr>
+    <h2>Creating a JavaScript Object</h2>
+    <p>
+        With JavaScript, you can define and create your own objects. <br><br>
+        There are different ways to create new objects:
+        <ul class="l-simples">
+            <li>Create a single object, using an object literal</li>
+            <li>Create a single object, with the keyword <b class="red">new</b></li>
+            <li>Define an object constructor, and then cfeate objects of the constructed type</li>
+            <li>Create an object using <b class="red">Object.create()</b></li>
+        </ul>
+    </p>
+    <hr>
+    <h2>Using an Object Literal</h2>
+    <p>
+        This is easiest way to create a JavaScript Object. <BR></BR>
+        Using an object literal, you both define and create an object in one statement. <BR></BR> 
+        An object literal is a list of name:value pairs inside curly braces. <BR></BR>
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                const person = {firstName:'Bruno', lastName:'Miguel', age:37, eyeColor:'brown'}
+            </h4>
+            <p>Or:</p>
+            <h4>
+                const person = {
+                    &emsp;firstName: 'Bruno', <br>
+                    &emsp;lastName: 'Miguel', <br>
+                    &emsp;age: 50, <br>
+                    &emsp;eyeColor: 'Brown' <br>
+                }
+            </h4>
+            <p>Or:</p>
+            <h4>
+                const person = {} <br>
+                person.firstName = 'Bruno' <br>
+                person.lastName = 'Miguel' <br>
+                person.age = 37 <br>
+                person.eyeColor = 'Brown'
+            </h4>
+        </fieldset>
+    </div>
+    <hr>
+    <h2>Using the JavaScript Keyword new</h2>
+    <p>
+        The following example create a new JavaScript object using <b class="red">new Object()</b>, and then adds 4 properties:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                const person = new Object() <br>
+                person.firstName = 'Bruno' <br>
+                person.lastName = 'Miguel' <br>
+                person.age = 37 <br>
+                person.eyeColor = 'Brown'
+            </h4>
+        </fieldset>
+    </div>
+    <div class="nota">
+        <p>
+            for readibility, simplicity and execution speed, use the object literal method.
+        </p>
+    </div>
+    <hr>
+    <h2>JavaScript Objects are Mutable</h2>
+    <p>
+        Objects are mutable: They are dressed by refrence,not by value. <BR></BR>
+        If person is an object, the following statement will not create a copy of person:
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <h4>const x = person; // Will not create a copy of person</h4>
+        </fieldset>
+    </div>
+    <p>
+        The object x is <b>not a copy</b>. It <b>is</b> person. Both x and person are the same object. <br><br>
+        Any changes to x will also change person, because x and person are the same object.
+    </p>
+    <div class="exemplo">
+        <fieldset>
+            <legend>Example</legend>
+            <h4>
+                const person = {
+                    &emsp;firstName: 'Bruno', <br>
+                    &emsp;lastName: 'Miguel', <br>
+                    &emsp;age: 50, <br>
+                    &emsp;eyeColor: 'Brown' <br>
+                } <br><br>
+                const x = person; <br>
+                x.age = 10 // Will change both x.age and person.age
+            </h4>
+        </fieldset>
+    </div>
+    <button onclick='location = "02-properties.html"' class="botoes">Next -></button>
+</body>
+
+</html>

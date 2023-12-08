@@ -1,0 +1,95 @@
+html {
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+h1,h2, h3 {
+    text-align: center;
+}
+
+hr {
+    margin: 20px 0;
+    border: 2px solid green;
+}
+
+.red {
+    color: red;
+    background-color: aquamarine;
+    padding: .4px 3px;
+    border-radius: 6px;
+}
+
+.pergunta {
+    background-color: lightyellow;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.pergunta h3 {
+    margin: 0;
+}
+
+/* Botões */
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-md {
+    margin: 0 50px;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: lightgreen;
+}
+
+/* Class Exemplo */
+
+.exemplo {
+    margin: 10px auto;
+    border: 1px solid black;
+    background-color: aquamarine;
+    border-radius: 4px;
+}
+
+.exemplo h3 {
+    margin: 5px 8px;
+}
+
+.exemplo fieldset{
+    margin: 5px 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.exemplo p {
+    padding-left: 13px;
+}
+
+/* Exemplo Prático */
+
+.pratico {
+    display: flex;
+}
+
+.variaveis {
+    font-size: 1.2rem;
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: lightsalmon;
+    margin: 6px;
+}
+
+.executar {
+    width: 80px;
+    height: 20px;
+    background-color: tomato;
+    border-radius: 5px;
+    margin-left: auto;  
+}
